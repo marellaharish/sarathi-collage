@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> collage website </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <section class="sub-header">
+     <nav>
+           <a href="index.html"><img src="logo.png" alt=""></a>
+           <div class="nav-link" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>       
+               <ul>
+                   <li><a href="index.html">HOME</a></li>
+                   <li><a href="about.html">ABOUT</a></li>
+                   <li><a href="course.html">COURSE</a></li>
+                   <li><a href="blog.html">BLOG</a></li>
+                   <li><a href="contact.html">CONTACT</a></li>
+
+               </ul>
+           </div>
+           <i class="fa fa-bars" onclick="showMenu()"></i>
+       </nav>
+        <h1>Our Courses & Online programs For 2022</h1>
+
+   </section> 
+  
+   <!------blog pahe content------->
+   <section class="blog-content">
+       <div class="row">
+           <div class="blog-left">
+               <img src="certificate.jpg" alt="">
+               <h2>Our Courses & Online programs For 2022</h2>
+               <p>
+                Illinois online courses are taught by the same faculty as on-campus course sections.
+                 Many online degree programs such as the School of Information Sciences LEEP Program, have received national awards for excellence. 
+                 The College of Education is ranked as one of the top ten best online graduate education programs by U.S. News & World Report. Online learners range from traditional to non-traditional college students;
+                  part-time to full-time; high school students to working professionals of any age; 
+                and, students enroll from virtually all corners of the globe.
+               </p>
+               <br>
+               <p>
+                Expand your knowledge and unlock your potential with Stanford Online. 
+                You can study anywhere while you explore a lifetime of opportunities including free online courses, professional education, and credit-bearing programs & degrees. 
+                Find the right fit for you and your organization. These courses grant Stanford University credit, affirmed in an official university transcript and culminating in a Stanford University degree
+                . Some courses allow for part-time study. 
+                All either require only limited travel to the Stanford campus or can be completed entirely online. 
+               </p>
+               <br>
+               <p>
+                These courses are typically free, open to any learner, and require no proof of identity. Students who successfully complete courses that include graded assignments may receive a certificate of participation.
+                Open learning opportunities are available through Stanford Online, which offers more than 100 massively open online courses, or MOOCs, and at the following locations:
+                Stanford on iTunes (requires iTunes app) - 3,000+ Stanford audio and video programs, including lectures, faculty presentations and campus events.
+                Stanford on YouTube  - archived videos from schools, departments, and programs across the university highlighting faculty lectures and research.
+                Stanford eCorner - 2,000+ videos, podcasts, and articles developed by the Stanford Technology Ventures Program.
+               </p>
+               <br>
+               <p>
+                We pride ourselves on our outstanding academic quality, and that’s true whether your learning happens in a digital lab or classroom, or on campus.
+                 You will get to know and engage with your professors and fellow students in virtual environments that will foster connectedness and a learning community.
+                 Prepare to be challenged, to learn, to grow, and to be supported in your learning every step of the way.
+                In addition to our academic offerings, we offer an array of services to support you on your journey.
+                 Our team of Success Advisors has an in-depth knowledge of academic and College resources and can provide you with the tools and means to support your academic, personal and social success. 
+                 Additionally, our Centre for Accessible Learning and Counseling Services offers a full range of mental health, accessible learning, and accommodation supports virtually.
+               </p>
+               <div class="comment-box">
+                   <h3>
+                       Leave a comment
+                   </h3>
+                   <form class="comment-form">
+                       <input type="text" name="" id="" placeholder="Enter Name">
+                       <input type="email" name="" id="" placeholder="Enter Email">
+                       <textarea rows="5" placeholder="Your Comment"></textarea>
+                       <button type="submit" class="hero-btn red-btn"> POST COMMENT </button>
+                   </form>
+               </div>
+           </div>
+           <div class="blog-right">
+             <h3>
+                 post categories
+             </h3>
+             <div>
+                 <span>
+                     Business Analytics
+                 </span>
+                 <span>
+                     25
+                 </span>
+             </div>
+             <div>
+                <span>
+                    Computer Science
+                </span>
+                <span>
+                    34
+                </span>
+            </div>
+            <div>
+                <span>
+                    Mechine Learning
+                </span>
+                <span>
+                    15
+                </span>
+            </div>
+            <div>
+                <span>
+                    Data Science
+                </span>
+                <span>
+                    34
+                </span>
+            </div>
+            <div>
+                <span>
+                    AutoCAD
+                </span>
+                <span>
+                    42
+                </span>
+            </div>
+            <div>
+                <span>
+                    Robotics
+                </span>
+                <span>
+                    14
+                </span>
+            </div>
+            <div>
+                <span>
+                    Commerce
+                </span>
+                <span>
+                    42
+                </span>
+            </div>
+           </div>
+       </div>
+
+   </section>
+
+
+   <!------Footer------->
+   <section class="footer">
+       <h4>About us</h4>
+       <p>
+        Sri Sarathi Institute of Engineering and Technology (SSIET), is started in 1998.  It is pioneer institute for <br> introducing Engineering education in Nuzvid.
+       </p>
+       <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+       </div>
+       <p>Made With <i class="fa fa-heart-o"></i> By Harish Marella </p>
+   </section>
+
+
+
+    <!------javascript for toggle menu---->
+   <script>
+       var navLinks=document.getElementById("navLinks");
+       function showMenu()
+       {
+           navLinks.style.right="0";
+       }
+       function hideMenu()
+       {
+           navLinks.style.right="-200px";
+       }
+   </script>
+</body>
+</html>

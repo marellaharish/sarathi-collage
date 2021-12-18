@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> collage website </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <section class="sub-header">
+     <nav>
+           <a href="index.html"><img src="logo.png" alt=""></a>
+           <div class="nav-link" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>       
+               <ul>
+                   <li><a href="index.html">HOME</a></li>
+                   <li><a href="about.html">ABOUT</a></li>
+                   <li><a href="course.html">COURSE</a></li>
+                   <li><a href="blog.html">BLOG</a></li>
+                   <li><a href="contact.html">CONTACT</a></li>
+
+               </ul>
+           </div>
+           <i class="fa fa-bars" onclick="showMenu()"></i>
+       </nav>
+        <h1>Our Courses</h1>
+
+   </section> 
+   <!------course------->
+ 
+
+ <section class="course">
+    <h1>
+        Cources We Offer
+    </h1>
+    <p>
+     They learn to use their technical skills in new and ventures some avenues of service as we provide practical knowledge
+    </p>
+    <div class="row">
+        <div class="course-col">
+        <h3>CSE</h3>
+        <p>Computer Science Engineering (CSE) encompasses a variety of topics that relates to computation,
+          like analysis of algorithms, programming languages, program design.</p>
+      </div>
+      <div class="course-col">
+         <h3>ECE</h3>
+         <p>Electronics and Communications Engineering (ECE) involves researching, designing, developing, and testing electronic equipment used in various systems.</p>
+       </div>
+       <div class="course-col">
+         <h3>EEE</h3>
+         <p>Electrical and Electronics Engineering (EEE) is a popular engineering course that imparts knowledge related to electrical and machine technology,
+              circuit analysis.</p>
+       </div>
+     </div>
+
+
+     </section>
+     <!----Facilities---->
+     <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>To impart quality education, To provide value based knowledge
+         ,To improve technical and communication skills</p> 
+         <div class="row">
+             <div class="facilities-col">
+                 <img src="library.png" alt="">
+                 <h3>library</h3>
+                 <p>The library was set up with a few books contributed by the students and faculty of the
+                     department. </p>
+             </div>
+             <div class="facilities-col">
+                 <img src="basketball.png" alt="">
+                 <h3>play grounds</h3>
+                 <p>Playground is situated within the college campus. 
+                     with a view of developing a sense of team spirit  and to encourage a spirit of healthy environment.</p>
+             </div>
+             <div class="facilities-col">
+                 <img src="cafeteria.png" alt="">
+                 <h3>Canteen</h3>
+                 <p> The college has a canteen run by an authorized contractor catering at reasonable rates. Regular check is made to maintain the quality of food.</p>
+             </div>
+         </div>         
+ 
+    </section>
+
+
+   <!------Footer------->
+   <section class="footer">
+       <h4>About us</h4>
+       <p>
+        Sri Sarathi Institute of Engineering and Technology (SSIET), is started in 1998.  It is pioneer institute for <br> introducing Engineering education in Nuzvid.
+       </p>
+       <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+       </div>
+       <p>Made With <i class="fa fa-heart-o"></i> By Harish Marella </p>
+   </section>
+
+
+
+    <!------javascript for toggle menu---->
+   <script>
+       var navLinks=document.getElementById("navLinks");
+       function showMenu()
+       {
+           navLinks.style.right="0";
+       }
+       function hideMenu()
+       {
+           navLinks.style.right="-200px";
+       }
+   </script>
+</body>
+</html>
